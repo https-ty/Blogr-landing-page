@@ -1,6 +1,5 @@
 /*Header*/
 header {
-  /* background-color: black; */
   padding: 80px 10% 0;
   position: fixed;
   top: 0;
@@ -10,7 +9,6 @@ header {
 }
 
 .nav-container {
-  /* background-color: pink; */
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
@@ -23,31 +21,132 @@ header {
   margin-right: 40px;
 }
 
-.nav-container .navbar {
+.nav-container .navbar{
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
 
-.nav-container .navbar .nav-btns a,
-.nav-container .navbar .nav-btns .sign-up,
-.nav-container .navbar .nav-links {
-  font-family: var(--font-overpass);
-  font-size: 1rem;
+.nav-container .navbar .nav-menu{
+  width: 50%;
 }
 
-.nav-container .navbar .nav-links a {
+.dropdown-item{
   margin-left: 30px;
+}
+
+.nav-container .navbar .nav-menu .nav-list{
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-container .navbar .nav-menu .nav-link{
+  font-family: var(--font-overpass);
+  font-size: 1rem;
   font-weight: 500;
   color: var(--white);
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-container .navbar .nav-menu .nav-link span::after{
+  position: absolute;
+  content: '';
+  bottom: 3px;
+  left: 0;
+  right: 0;
+  width: 77%;
+  height: 2px;
+  background-color: var(--white);
+  transform: scaleX(0);
+  transform-origin: bottom;
+  transition: transform 0.3s ease;
+}
+
+.nav-container .navbar .nav-menu .nav-link .dropdown-arrow {
+  margin-left: 8px;
+  transition: .3s ease;
+}
+
+.nav-container .navbar .nav-menu .nav-list .dropdown-item {
+  position: relative;
+}
+
+.nav-container .navbar .nav-menu .nav-list .dropdown-menu{
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+  /* transition: opacity 0.3s ease, visibility 0.3s ease; */
+
+  background-color: var(--white);
+  border-radius: 4px;
+  position: absolute;
+  top: 200%;
+  left: -20px;
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  padding: 30px 20px;
+  gap: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.nav-container .navbar .nav-menu .nav-list .dropdown-item:hover .dropdown-menu,
+.nav-container .navbar .nav-menu .nav-list .dropdown-menu:hover {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.nav-container .navbar .nav-menu .nav-link:hover span::after,
+.nav-container .navbar .nav-menu .nav-list .dropdown-item:hover .nav-link span::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.nav-container .navbar .nav-menu .nav-list .dropdown-item:hover .dropdown-menu,
+.nav-container .navbar .nav-menu .nav-list .dropdown-item:hover .dropdown-arrow,
+.nav-container .navbar .nav-menu .nav-list .dropdown-menu:hover .dropdown-arrow {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-container .navbar .nav-menu .nav-list .dropdown-item:hover .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.nav-container .navbar .nav-menu .nav-list .dropdown-item:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-container .navbar .nav-menu .nav-list .dropdown-menu .dropdown-link {
+  font-family: var(--font-ubuntu);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--vd-black-blue);
+  transition: font-weight 0.2s ease;
+}
+
+.nav-container .navbar .nav-menu .nav-list .dropdown-menu .dropdown-link:hover {
+  font-weight: 700;
 }
 
 .nav-container .navbar .nav-btns a {
+  font-size: 1rem;
+  font-family: var(--font-overpass);
   color: var(--white);
   font-weight: 500;
   margin-right: 30px;
-}
+} 
 
 .nav-container .navbar .nav-btns .sign-up {
   font-weight: 700;
@@ -68,6 +167,10 @@ header {
 }
 
 .nav-container .nav-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
   display: none;
 }
 
@@ -172,9 +275,9 @@ header {
   color: var(--white);
 }
 
-.home-container .home-content .home-cta-btn .learn-more-btn:hover{
-    background-color: var(--white);
-    color: var(--l-red);
+.home-container .home-content .home-cta-btn .learn-more-btn:hover {
+  background-color: var(--white);
+  color: var(--l-red);
 }
 
 /*End Home*/
