@@ -199,6 +199,7 @@ header {
   /* border:2px solid white; */
   padding: 0 10%;
   background: linear-gradient(to right, var(--gd-vl-red), var(--gd-l-red));
+  /* background: linear-gradient(135deg, var(--gd-vl-red) 30%, var(--gd-l-red) 70%); */
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;

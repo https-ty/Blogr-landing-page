@@ -42,7 +42,8 @@
     top: 200%;
     left: 0;
     right: 0;
-    width: 100%;
+    width: 80%;
+    margin: 0  auto;
     flex-direction: column;
     background-color: var(--white);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -152,24 +153,17 @@
 
 }
 
-
-
-
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px){
   /*Home*/
-  .home-container {
-    background: linear-gradient(to bottom, var(--gd-vl-red), var(--gd-l-red));
-  }
-
   .home-container .desktop-home-pattern {
     display: none;
   }
-  .home-container .mobile-home-pattern {
+
+  .home-container .mobile-home-pattern{
     display: block;
-    position: absolute;
     z-index: -1;
-    top: -48%;
-    right: -160%;
+    position: absolute;
+    left: -10%;
   }
 
   .home-container .home-content {
@@ -189,5 +183,33 @@
   .home-container .home-content .home-cta-btn .start-ff-btn,
   .home-container .home-content .home-cta-btn .learn-more-btn {
     height: 45px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  /*Header/Navbar*/
+  .nav-container .navbar {
+    width: 100%;
+  }
+  
+}
+
+
+@media screen and (max-width: 425px) {
+  /*Home*/
+
+  .home-container {
+    background: linear-gradient(to bottom, var(--gd-vl-red), var(--gd-l-red));
+    /* background: linear-gradient(135deg, var(--gd-vl-red), var(--gd-l-red)); */
+    /* background: linear-gradient(135deg, var(--gd-vl-red) 30%, var(--gd-l-red) 70%); */
+  }
+
+  .home-container .mobile-home-pattern{
+    display: block;
+    z-index: -1;
+    position: absolute;
+    left: -90%;
+    top: -45%;
   }
 }
