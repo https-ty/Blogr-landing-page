@@ -16,6 +16,21 @@
 //     });
 //   });
 
+//NAVBAR SCROLL COLOR
+// document.addEventListener("DOMContentLoaded", function () {
+//   const navContainer = document.querySelector('.nav-container');
+
+//   window.addEventListener('scroll', function () {
+//     if (window.scrollY > 50) { // Adjust this value as needed
+//       navContainer.classList.add('scrolled');
+//     } else {
+//       navContainer.classList.remove('scrolled');
+//     }
+//   });
+// });
+
+
+//NAVBAR MENU TOGGLE
 document.addEventListener("DOMContentLoaded", function () {
   const hamburger = document.querySelector(".hmbgr");
   const closeHamburger = document.querySelector(".close-hmbgr");
@@ -200,6 +215,7 @@ document.addEventListener("DOMContentLoaded", function () {
 //     });
 // });
 
+//NAVBAR NAVLINK AND NAVMENU
 document.addEventListener("DOMContentLoaded", () => {
   const navLinks = document.querySelectorAll(".dropdown-item .nav-link");
   let currentOpenDropdown = null;

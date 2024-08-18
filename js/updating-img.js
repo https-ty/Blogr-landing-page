@@ -10,6 +10,14 @@ function updateImages() {
       arrow.src = "images/icon-arrow-light.svg";
     }
   });
+
+  if (editorImage) {
+    if (screenWidth <= 1000) {
+      editorImage.src = "images/illustration-editor-mobile.svg";
+    } else {
+      editorImage.src = "images/illustration-editor-desktop.svg";
+    }
+  }
 }
 
 window.onload = updateImages;

@@ -1,7 +1,7 @@
 /*Header*/
 header {
   padding: 50px 8% 0;
-  position: fixed;
+  position: absolute; /*fixed*/
   top: 0;
   left: 0;
   right: 0;
@@ -19,13 +19,23 @@ header {
   justify-content: space-between;
   align-items: center;
   background: transparent;
+  transition: 0.3s ease;
 }
+
+/* .nav-container.scrolled {
+  padding: 12px;
+  border-radius: 5px;
+  border-bottom-left-radius: 30px 30px;
+  background: linear-gradient(to right, var(--gd-vl-red), var(--gd-l-red));
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+} */
 
 .nav-container .nav-logo {
   margin-right: 40px;
 }
 
-.nav-container .navbar{
+.nav-container .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,22 +44,22 @@ header {
   /* border: 2px solid red; */
 }
 
-.nav-container .navbar .nav-menu{
+.nav-container .navbar .nav-menu {
   width: 50%;
 }
 
-.dropdown-item{
+.dropdown-item {
   margin-left: 30px;
 }
 
-.nav-container .navbar .nav-menu .nav-list{
+.nav-container .navbar .nav-menu .nav-list {
   display: flex;
   justify-content: stretch;
   align-items: center;
   width: 100%;
 }
 
-.nav-container .navbar .nav-menu .nav-link{
+.nav-container .navbar .nav-menu .nav-link {
   font-family: var(--font-overpass);
   font-size: 1rem;
   font-weight: 500;
@@ -60,9 +70,9 @@ header {
   cursor: pointer;
 }
 
-.nav-container .navbar .nav-menu .nav-link span::after{
+.nav-container .navbar .nav-menu .nav-link span::after {
   position: absolute;
-  content: '';
+  content: "";
   bottom: 3px;
   left: 0;
   right: 0;
@@ -76,14 +86,14 @@ header {
 
 .nav-container .navbar .nav-menu .nav-link .dropdown-arrow {
   margin-left: 8px;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
 .nav-container .navbar .nav-menu .nav-list .dropdown-item {
   position: relative;
 }
 
-.nav-container .navbar .nav-menu .nav-list .dropdown-menu{
+.nav-container .navbar .nav-menu .nav-list .dropdown-menu {
   display: none;
   opacity: 0;
   visibility: hidden;
@@ -120,7 +130,13 @@ header {
 }
 
 .nav-container .navbar .nav-menu .nav-link:hover span::after,
-.nav-container .navbar .nav-menu .nav-list .dropdown-item:hover .nav-link span::after {
+.nav-container
+  .navbar
+  .nav-menu
+  .nav-list
+  .dropdown-item:hover
+  .nav-link
+  span::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
@@ -132,7 +148,12 @@ header {
   visibility: visible;
 } */
 
-.nav-container .navbar .nav-menu .nav-list .dropdown-item:hover .dropdown-arrow {
+.nav-container
+  .navbar
+  .nav-menu
+  .nav-list
+  .dropdown-item:hover
+  .dropdown-arrow {
   transform: rotate(180deg);
 }
 
@@ -150,10 +171,10 @@ header {
 }
 
 .nav-container .navbar .nav-menu .nav-list .dropdown-menu .dropdown-link:hover {
-  font-weight: 700; 
+  font-weight: 700;
 }
 
-.line{
+.line {
   display: none;
 }
 
@@ -163,7 +184,7 @@ header {
   color: var(--white);
   font-weight: 500;
   margin-right: 30px;
-} 
+}
 
 .nav-container .navbar .nav-btns .sign-up {
   font-weight: 700;
@@ -235,7 +256,7 @@ header {
   max-width: none;
 }
 
-.home-container .mobile-home-pattern{
+.home-container .mobile-home-pattern {
   display: none;
 }
 
@@ -295,3 +316,89 @@ header {
 }
 
 /*End Home*/
+
+/*Design Future*/
+.intro {
+  padding: 70px 0;
+  margin: auto;
+  overflow: hidden;
+}
+
+.intro h1 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 80px;
+  /*top: 130px; */
+
+  /*top: 60px;
+  left: 0;
+  right: 0; */
+  text-align: center;
+  font-family: var(--font-overpass);
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: var(--vd-blue);
+}
+
+.intro-container{
+  width: 100%;
+  max-width: 1440px;
+  height: auto;
+  margin: 0 auto;
+  /* border: 2px solid blue; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.intro-left-container{
+  flex: 1;
+  padding: 0 0 0 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.intro-left-content{
+  margin-right: 150px;
+}
+
+.intro-left-content h2{
+  font-family: var(--font-overpass);
+  font-size: 1.688rem;
+  font-weight: 600;
+  color: var(--vd-blue);
+  margin-bottom: 20px;
+}
+
+.intro-left-content p{
+  font-family: var(--font-overpass);
+  font-size: 1rem;
+  color: var(--vd-grayish-blue);
+  line-height: 30px;
+  padding-right: 65px;
+}
+
+
+.intro-right-container{
+  flex: 1;
+  margin-right: -10%;
+  display: flex;
+  justify-content: center;
+}
+
+.intro-right-container img {
+  max-width: 150%;
+  height: auto;
+}
+
+/*End Design Future*/
