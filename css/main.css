@@ -105,6 +105,13 @@ header {
   z-index: 9;
 }
 
+.nav-container .navbar .nav-menu .nav-list .dropdown-menu.show {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
 .nav-container .navbar .nav-menu .nav-list .dropdown-item:hover .dropdown-menu,
 .nav-container .navbar .nav-menu .nav-list .dropdown-menu:hover {
   opacity: 1;
