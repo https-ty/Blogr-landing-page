@@ -16,7 +16,6 @@
     padding-right: 25px;
   }
 
-
   .intro-right-container img {
     max-width: 130%;
     height: auto;
@@ -32,6 +31,9 @@
 
 @media screen and (max-width: 1000px){
   /*Intro*/
+  .intro h1{
+    margin-bottom: 40px;
+  }
   .intro-container{
     flex-direction: column-reverse;
   }
@@ -244,7 +246,7 @@
   /*Intro*/
   .intro h1{
     font-size: 1.688rem;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
   }
   .intro-left-container{
     gap: 2rem;
