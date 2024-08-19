@@ -1,18 +1,22 @@
 @media screen and (max-width: 1280px) {
   /*Intro*/
-  .intro h1{
+  .intro h1 {
     position: relative;
     margin-top: 0;
   }
+
+  .intro-container{
+    margin: 0;
+  }
   .intro-left-container {
-    padding: 0 0 0 3%;
+    padding: 0;
   }
 
-  .intro-left-content{
-    margin-right: 80px;
+  .intro-left-content {
+    margin-right: 50px;
   }
 
-  .intro-left-content p{
+  .intro-left-content p {
     padding-right: 25px;
   }
 
@@ -21,6 +25,10 @@
     height: auto;
   }
 
+  /*State*/
+  .state-right-container {
+    padding: 0;
+  }
 }
 @media screen and (max-width: 1024px) {
   /*Header/ Navbar*/
@@ -29,25 +37,58 @@
   }
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px) {
   /*Intro*/
-  .intro h1{
+  .intro h1 {
     margin-bottom: 40px;
   }
-  .intro-container{
+  .intro-container {
     flex-direction: column-reverse;
   }
-  
-  .intro-right-container{
+
+  .intro-right-container {
     margin-right: 0;
   }
 
-  .intro-left-container{
+  .intro-left-container {
     padding: 0 0 0 8%;
     text-align: center;
   }
-}
 
+  /*State*/
+  .state {
+    border: 2px solid blue;
+    margin-top: 280px;
+    margin-bottom: 500px;
+  }
+  .state-container{
+    flex-direction: column;
+    height: 500px;
+    border: 2px solid red;
+  }
+
+  .state-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+
+  .state-right-container{
+    padding: 0 80px;
+    text-align: center;
+  }
+
+  .state-left-container img{
+    margin-top: -280px;
+    /* width: 80%; */
+  }
+
+
+
+}
 
 @media screen and (max-width: 899px) {
   /*Header/ Navbar*/
@@ -244,24 +285,23 @@
   }
 
   /*Intro*/
-  .intro h1{
+  .intro h1 {
     font-size: 1.688rem;
     /* margin-bottom: 50px; */
   }
-  .intro-left-container{
+  .intro-left-container {
     gap: 2rem;
     padding: 0 6%;
   }
 
-  .intro-left-content{
+  .intro-left-content {
     width: 100%;
   }
 
-  .intro-left-content h2{
+  .intro-left-content h2 {
     /* border: 2px solid red; */
     padding: 0 20px;
   }
-
 }
 
 @media screen and (max-width: 500px) {

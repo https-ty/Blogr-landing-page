@@ -433,6 +433,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -452,17 +453,19 @@ header {
   flex: 1;
   position: relative;
   z-index: 1; 
-  /* border: 2px solid white; */
+  border: 2px solid white;
 }
 
 .state-right-container{
-  padding: 0 100px 0 60px;
+  padding: 0 100px 0 100px;
 }
 
 .state-left-container img{
   margin-top: 50px;
   position: relative;
   z-index: 2; 
+  width: 100%;
+  height: auto;
 }
 
 .state-right-container h1 {
