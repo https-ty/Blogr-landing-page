@@ -446,6 +446,8 @@ header {
   top: -130%;
   left: -15%;
   z-index: 0;
+  width: 100%;
+  height: auto;
 }
 
 .state-left-container,

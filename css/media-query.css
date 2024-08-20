@@ -65,25 +65,41 @@
     flex-direction: column;
     height: 500px;
     border: 2px solid red;
+    position: relative; 
   }
 
-  .state-pattern {
+  .state-pattern-wrapper {
     position: absolute;
-    top: 0;
+    top: -30%;
     left: 0;
     right: 0;
     bottom: 0;
+    /* display: flex;
+    justify-content: center;
+    align-items: flex-start;  */
+    overflow: hidden;
     z-index: 0;
+  }
+
+  .state-pattern{
+    /* width: 80%;
+    height: auto; */
+    position: relative;
+    top: auto;
+    left: auto; 
   }
 
   .state-right-container{
     padding: 0 80px;
     text-align: center;
+    z-index: 1;
   }
 
   .state-left-container img{
     margin-top: -280px;
-    /* width: 80%; */
+    /* width: 80%;
+    height: auto; */
+    z-index: 2;
   }
 
 
