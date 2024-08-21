@@ -317,11 +317,19 @@ header {
 
 /*End Home*/
 
-/*Design Future*/
-.intro {
-  padding: 70px 0 60px;
+/*Intro and Free*/
+.intro,
+.free {
   margin: auto;
   overflow: hidden;
+}
+
+.intro{
+  padding: 70px 0 60px;
+}
+
+.free {
+  padding: 50px 0 60px;
 }
 
 .intro h1 {
@@ -341,22 +349,31 @@ header {
   color: var(--vd-blue);
 }
 
-.intro-container {
+.intro-container,
+.free-container {
   width: 100%;
   max-width: 1440px;
   height: auto;
   margin: 0 auto;
-  /* border: 2px solid blue; */
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   position: relative;
+}
+
+
+.intro-container {
   padding: 0 0 0 8%;
 }
 
-.intro-left-container {
+.free-container {
+  padding: 0 8% 0 0;
+}
+
+.intro-left-container,
+.free-right-container {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -373,7 +390,12 @@ header {
   margin-right: 150px;
 }
 
-.intro-left-content h2 {
+.free-right-content {
+  margin-left: 150px;
+}
+
+.intro-left-content h2,
+.free-right-content h2 {
   font-family: var(--font-overpass);
   font-size: 1.688rem;
   font-weight: 600;
@@ -381,26 +403,42 @@ header {
   margin-bottom: 20px;
 }
 
-.intro-left-content p {
+.intro-left-content p,
+.free-right-content p {
   font-family: var(--font-overpass);
   font-size: 1rem;
   color: var(--vd-grayish-blue);
   line-height: 30px;
+}
+.intro-left-content p {
   padding-right: 65px;
 }
 
-.intro-right-container {
+/* .free-right-content p {
+  padding-left: 65px;
+} */
+
+.intro-right-container,
+.free-left-container{
   flex: 1;
-  margin-right: -10%;
   display: flex;
   justify-content: center;
 }
 
-.intro-right-container img {
+.intro-right-container{
+  margin-right: -10%;
+}
+
+.free-left-container{
+  margin-left: -10%;
+}
+
+.intro-right-container img,
+.free-left-container img {
   max-width: 150%;
   height: auto;
 }
-/*End Design Future*/
+/*End Intro*/
 
 /*State*/
 .state {
@@ -446,20 +484,19 @@ header {
   top: -130%;
   left: -15%;
   z-index: 0;
-  width: 100%;
-  height: auto;
+  /* width: 100%; */
+  /* height: auto; */
 }
 
 .state-left-container,
 .state-right-container {
   flex: 1;
   position: relative;
-  z-index: 1; 
-  border: 2px solid white;
+  z-index: 1;
 }
 
 .state-right-container{
-  padding: 0 100px 0 100px;
+  padding: 0 110px 0 100px;
 }
 
 .state-left-container img{
@@ -473,9 +510,10 @@ header {
 .state-right-container h1 {
   font-family: var(--font-overpass);
   font-size: 2.25rem;
-  font-weight: 600;
+  /* font-weight: 600; */
   color: var(--white);
   margin-bottom: 20px;
+  font-weight: 500;
 }
 
 .state-right-container p {

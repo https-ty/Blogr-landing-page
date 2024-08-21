@@ -14,8 +14,10 @@ function updateImages() {
   if (editorImage) {
     if (screenWidth <= 1000) {
       editorImage.src = "images/illustration-editor-mobile.svg";
+      freeImage.src = "images/illustration-laptop-mobile.svg"
     } else {
       editorImage.src = "images/illustration-editor-desktop.svg";
+      freeImage.src = "images/illustration-laptop-desktop.svg";
     }
   }
 }

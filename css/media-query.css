@@ -5,22 +5,36 @@
     margin-top: 0;
   }
 
-  .intro-container{
-    margin: 0;
-  }
-  .intro-left-container {
+  .intro-container,
+  .free-container {
+    /* margin: 0; */
     padding: 0;
   }
 
+  .intro-left-container,
+  .free-right-container {
+    gap: 2rem;
+    padding: 0 6%;
+  }
+
   .intro-left-content {
-    margin-right: 50px;
+    margin-right: 0;
+  }
+
+  .free-right-content {
+    margin-left: 0;
   }
 
   .intro-left-content p {
-    padding-right: 25px;
+    padding-right: 0;
   }
 
-  .intro-right-container img {
+  .free-right-content p {
+    padding-left: 0;
+  }
+
+  .intro-right-container img,
+  .free-left-container {
     max-width: 130%;
     height: auto;
   }
@@ -44,66 +58,82 @@
   }
   .intro-container {
     flex-direction: column-reverse;
+    /* justify-content: center;
+    align-items: center;
+    margin: 0 auto; */
+  }
+
+  .free-container{
+    flex-direction: column;
   }
 
   .intro-right-container {
     margin-right: 0;
   }
 
+  .free-left-container {
+    margin-left: 0;
+  }
+
   .intro-left-container {
-    padding: 0 0 0 8%;
+    padding: 0 6%;
+    text-align: center;
+  }
+
+  .free-right-container {
+    padding: 0 6%;
     text-align: center;
   }
 
   /*State*/
   .state {
-    border: 2px solid blue;
-    margin-top: 280px;
-    margin-bottom: 500px;
+    margin: 280px 0 0;
   }
-  .state-container{
+  .state-container {
     flex-direction: column;
     height: 500px;
-    border: 2px solid red;
-    position: relative; 
+    /* border: 2px solid red; */
+    position: relative;
+    padding-bottom: 100px;
   }
 
   .state-pattern-wrapper {
+    display: none;
+  }
+
+  /* .state-pattern-wrapper {
     position: absolute;
     top: -30%;
     left: 0;
     right: 0;
     bottom: 0;
-    /* display: flex;
+    display: flex;
     justify-content: center;
-    align-items: flex-start;  */
+    align-items: flex-start; 
     overflow: hidden;
     z-index: 0;
   }
 
   .state-pattern{
-    /* width: 80%;
-    height: auto; */
+    width: 80%;
+    height: auto;
     position: relative;
     top: auto;
     left: auto; 
+  } */
+
+  .state-left-container {
+    position: absolute;
+    top: -320px;
+    /* border: 2px solid white; */
   }
 
-  .state-right-container{
-    padding: 0 80px;
+  .state-right-container {
+    position: relative;
     text-align: center;
-    z-index: 1;
+    /* border: 2px solid magenta; */
+    margin: 300px 50px 0px 50px;
   }
-
-  .state-left-container img{
-    margin-top: -280px;
-    /* width: 80%;
-    height: auto; */
-    z-index: 2;
-  }
-
-
-
 }
 
 @media screen and (max-width: 899px) {
@@ -305,18 +335,31 @@
     font-size: 1.688rem;
     /* margin-bottom: 50px; */
   }
-  .intro-left-container {
+  
+  /* .intro-left-container,
+  .free-right-container {
     gap: 2rem;
     padding: 0 6%;
-  }
+  } */
 
-  .intro-left-content {
+  .intro-left-content,
+  .free-right-content {
     width: 100%;
   }
 
-  .intro-left-content h2 {
+  .intro-left-content h2,
+  .free-right-content h2 {
     /* border: 2px solid red; */
     padding: 0 20px;
+  }
+
+  /*State*/
+  .state-right-container {
+    margin: 300px 0px 0px 0px;
+  }
+
+  .state-right-container h1 {
+    font-size: 2rem;
   }
 }
 
@@ -342,5 +385,59 @@
     position: absolute;
     left: -90%;
     top: -45%;
+  }
+
+  /*State*/
+  .state {
+    margin: 180px 0 0;
+  }
+
+  .state-container {
+    height: 600px;
+  }
+  .state-left-container {
+    top: -250px;
+  }
+
+  .state-right-container {
+    margin: 230px 20px 0px 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  /*State*/
+  .state-left-container {
+    top: -230px;
+  }
+
+  .state-right-container {
+    margin: 230px 10px 0px 10px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+    /*Intro*/
+    .intro-right-container{
+      padding: 0 20px;
+    }
+
+    .free-left-container{
+      padding: 0 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 320px) {
+  /*State*/
+  .state {
+    margin: 130px 0;
+  }
+  .state-container {
+    height: 550px;
+  }
+
+  .state-left-container {
+    top: -200px;
   }
 }
