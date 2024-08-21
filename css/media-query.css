@@ -26,17 +26,18 @@
     border: 2px solid red;
   } */
 
-  .free-right-content{
-    margin-left: 0;
+  .free-right-content {
+    margin-left: 60px;
+    margin-right: 0px;
   }
 
-  .intro-left-content p {
+  /* .intro-left-content p {
     padding-right: 0;
   }
 
   .free-right-content p {
     padding-left: 0;
-  }
+  } */
 
   .intro-right-container img,
   .free-left-container {
@@ -68,7 +69,7 @@
     margin: 0 auto; */
   }
 
-  .free-container{
+  .free-container {
     flex-direction: column;
   }
 
@@ -80,19 +81,23 @@
     margin-left: 0;
   }
 
+  .free-right-content{
+    margin-left: 0;
+  }
+
   .intro-left-container {
-    padding: 0 6%;
+    padding: 0 5%;
     text-align: center;
   }
 
   .free-right-container {
-    padding: 0 6%;
+    padding: 0 5%;
     text-align: center;
   }
-
+/* 
   .free-right-content p {
     padding-right: 0;
-  }
+  } */
 
   /*State*/
   .state {
@@ -344,7 +349,7 @@
     font-size: 1.688rem;
     /* margin-bottom: 50px; */
   }
-  
+
   /* .intro-left-container,
   .free-right-container {
     gap: 2rem;
@@ -398,7 +403,7 @@
 
   /*Intro and Free*/
   .intro-left-content p,
-  .free-right-content p{
+  .free-right-content p {
     padding: 0 15px;
   }
 
@@ -417,7 +422,6 @@
   .state-right-container {
     margin: 230px 20px 0px 20px;
   }
-  
 }
 
 @media screen and (max-width: 375px) {
@@ -432,22 +436,20 @@
 }
 
 @media screen and (max-width: 370px) {
-    /*Intro*/
-    .intro-right-container{
-      padding: 0 20px;
-    }
+  /*Intro*/
+  .intro-right-container {
+    padding: 0 20px;
+  }
 
-    .free-left-container{
-      padding: 0 20px;
-    }
-
-
+  .free-left-container {
+    padding: 0 20px;
+  }
 }
 
 @media screen and (max-width: 320px) {
   /*State*/
   .state {
-    margin: 130px 0;
+    margin: 130px 0 0;
   }
   .state-container {
     height: 550px;
