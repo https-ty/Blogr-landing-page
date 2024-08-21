@@ -414,9 +414,9 @@ header {
   padding-right: 65px;
 }
 
-/* .free-right-content p {
-  padding-left: 65px;
-} */
+.free-right-content p {
+  padding-right: 65px;
+}
 
 .intro-right-container,
 .free-left-container{
