@@ -21,7 +21,12 @@
     margin-right: 0;
   }
 
-  .free-right-content {
+  /* .free-right-content {
+    margin-left: 20px;
+    border: 2px solid red;
+  } */
+
+  .free-right-content{
     margin-left: 0;
   }
 
@@ -83,6 +88,10 @@
   .free-right-container {
     padding: 0 6%;
     text-align: center;
+  }
+
+  .free-right-content p {
+    padding-right: 0;
   }
 
   /*State*/
@@ -387,6 +396,12 @@
     top: -45%;
   }
 
+  /*Intro and Free*/
+  .intro-left-content p,
+  .free-right-content p{
+    padding: 0 15px;
+  }
+
   /*State*/
   .state {
     margin: 180px 0 0;
@@ -402,6 +417,7 @@
   .state-right-container {
     margin: 230px 20px 0px 20px;
   }
+  
 }
 
 @media screen and (max-width: 375px) {
