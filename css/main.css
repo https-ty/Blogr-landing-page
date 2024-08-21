@@ -324,7 +324,7 @@ header {
   overflow: hidden;
 }
 
-.intro{
+.intro {
   padding: 70px 0 60px;
 }
 
@@ -421,17 +421,17 @@ header {
 } */
 
 .intro-right-container,
-.free-left-container{
+.free-left-container {
   flex: 1;
   display: flex;
   justify-content: center;
 }
 
-.intro-right-container{
+.intro-right-container {
   margin-right: -15%;
 }
 
-.free-left-container{
+.free-left-container {
   margin-left: -12%;
 }
 
@@ -497,14 +497,14 @@ header {
   z-index: 1;
 }
 
-.state-right-container{
+.state-right-container {
   padding: 0 110px 0 100px;
 }
 
-.state-left-container img{
+.state-left-container img {
   margin-top: 50px;
   position: relative;
-  z-index: 2; 
+  z-index: 2;
   width: 100%;
   height: auto;
 }
@@ -525,3 +525,79 @@ header {
   line-height: 30px;
 }
 /*End State*/
+
+/*Footer*/
+footer {
+  margin-top: 50px;
+}
+
+.footer-container {
+  padding: 0 20% 0 8%;
+  width: 100%;
+  max-width: 1440px;
+  min-height: 350px;
+  height: 100%;
+  margin: 0 auto;
+  background-color: var(--vd-black-blue);
+  border-top-right-radius: 120px 110px;
+
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  color: var(--grayish-blue);
+}
+
+.footer-links h1 {
+  font-size: 1rem;
+  font-family: var(--font-overpass);
+  color: var(--white);
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.footer-links ul li {
+  font-family: var(--font-ubuntu);
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: text-decoration-color 0.3s ease;
+}
+
+.footer-links ul li:hover{
+  text-decoration: underline;
+}
+
+.footer-container .attribution {
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  bottom: 15px;
+  font-style: italic;
+  font-family: var(--font-overpass);
+  font-size: 0.9rem;
+  color: var(--grayish-blue);
+  text-align: center;
+  font-weight: 300;
+}
+
+.footer-container .attribution a {
+  color: var(--vl-red);
+  transition: text-decoration-color 0.3s ease;
+}
+
+.footer-container .attribution a:hover {
+  text-decoration: underline;
+  transition: text-decoration-color 0.3s ease;
+}
+
+/*End Footer*/

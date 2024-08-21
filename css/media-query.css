@@ -148,6 +148,11 @@
     /* border: 2px solid magenta; */
     margin: 300px 50px 0px 50px;
   }
+
+  /*Footer*/
+  .footer-container {
+    padding: 0 8%;
+  }
 }
 
 @media screen and (max-width: 899px) {
@@ -374,6 +379,19 @@
 
   .state-right-container h1 {
     font-size: 2rem;
+  }
+
+    /*Footer*/
+  .footer-content{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+  }
+
+  .footer-links h1 {
+    margin-top: 30px;
   }
 }
 
