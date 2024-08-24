@@ -468,7 +468,7 @@ header {
   position: relative;
   z-index: 1;
   padding: 0 6%;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .state-pattern-wrapper {
@@ -491,6 +491,7 @@ header {
   /* width: 100%; */
   /* height: auto; */
 }
+
 
 .state-left-container,
 .state-right-container {
