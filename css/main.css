@@ -84,6 +84,18 @@ header {
   transition: transform 0.3s ease;
 }
 
+.nav-container .navbar .nav-menu .nav-link:hover span::after,
+.nav-container
+  .navbar
+  .nav-menu
+  .nav-list
+  .dropdown-item:hover
+  .nav-link
+  span::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 .nav-container .navbar .nav-menu .nav-link .dropdown-arrow {
   margin-left: 8px;
   transition: 0.3s ease;
@@ -129,17 +141,6 @@ header {
   transform: translateY(0);
 }
 
-.nav-container .navbar .nav-menu .nav-link:hover span::after,
-.nav-container
-  .navbar
-  .nav-menu
-  .nav-list
-  .dropdown-item:hover
-  .nav-link
-  span::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
 
 /* .nav-container .navbar .nav-menu .nav-list .dropdown-item:hover .dropdown-menu,
 .nav-container .navbar .nav-menu .nav-list .dropdown-item:hover .dropdown-arrow{
@@ -467,6 +468,7 @@ header {
   position: relative;
   z-index: 1;
   padding: 0 6%;
+  /* overflow: hidden; */
 }
 
 .state-pattern-wrapper {
