@@ -41,7 +41,6 @@ header {
   align-items: center;
   width: 100%;
   position: relative;
-  /* border: 2px solid red; */
 }
 
 .nav-container .navbar .nav-menu {
@@ -190,7 +189,6 @@ header {
 .nav-container .navbar .nav-btns .sign-up {
   font-weight: 700;
   background-color: var(--white);
-  /* padding: 15px 45px; */
   width: 150px;
   height: 50px;
   border-radius: 50px;
@@ -218,10 +216,8 @@ header {
 
 /*Home*/
 .home-container {
-  /* border:2px solid white; */
   padding: 0 10%;
   background: linear-gradient(to right, var(--gd-vl-red), var(--gd-l-red));
-  /* background: linear-gradient(135deg, var(--gd-vl-red) 30%, var(--gd-l-red) 70%); */
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
@@ -230,15 +226,12 @@ header {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-
-  /* border-bottom-left-radius: 100px; */
   border-bottom-left-radius: 120px 110px;
   position: relative;
   z-index: 5;
 }
 
 .home-container .home-content {
-  /* border: 2px solid white; */
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
@@ -272,7 +265,6 @@ header {
   font-family: var(--font-overpass);
   font-size: 1.3rem;
   margin-bottom: 50px;
-  /* font-weight: 300; */
 }
 
 .home-container .home-content .home-cta-btn {
@@ -338,11 +330,6 @@ header {
   left: 0;
   right: 0;
   margin-top: 80px;
-  /*top: 130px; */
-
-  /*top: 60px;
-  left: 0;
-  right: 0; */
   text-align: center;
   font-family: var(--font-overpass);
   font-size: 2.25rem;
@@ -370,7 +357,6 @@ header {
 
 .free-container {
   padding: 0 8% 0 0;
-  /* border: 2px solid red; */
 }
 
 .intro-left-container,
@@ -383,9 +369,6 @@ header {
   gap: 4rem;
   margin-top: 40px;
   flex-wrap: wrap;
-  /* padding-right: 30px; */
-
-  /* border: 2px solid red; */
 }
 
 .intro-left-content {
@@ -413,13 +396,6 @@ header {
   color: var(--vd-grayish-blue);
   line-height: 30px;
 }
-/* .intro-left-content p {
-  padding-right: 65px;
-}
-
-.free-right-content p {
-  padding-right: 105px;
-} */
 
 .intro-right-container,
 .free-left-container {
@@ -445,7 +421,6 @@ header {
 
 /*State*/
 .state {
-  /* border: 2px solid blue; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -468,7 +443,6 @@ header {
   position: relative;
   z-index: 1;
   padding: 0 6%;
-  overflow: hidden;
 }
 
 .state-pattern-wrapper {
@@ -479,8 +453,9 @@ header {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  /* pointer-events: none; */
   z-index: 0;
+  border-top-right-radius: 120px 110px;
+  border-bottom-left-radius: 120px 110px;
 }
 
 .state-pattern {
@@ -488,10 +463,7 @@ header {
   top: -130%;
   left: -15%;
   z-index: 0;
-  /* width: 100%; */
-  /* height: auto; */
 }
-
 
 .state-left-container,
 .state-right-container {
@@ -515,7 +487,6 @@ header {
 .state-right-container h1 {
   font-family: var(--font-overpass);
   font-size: 2.25rem;
-  /* font-weight: 600; */
   color: var(--white);
   margin-bottom: 20px;
   font-weight: 500;
@@ -545,7 +516,6 @@ footer {
   border-top-right-radius: 120px 110px;
 
   display: flex;
-  /* flex-direction: row; */
   justify-content: center;
   align-items: center;
   position: relative;
